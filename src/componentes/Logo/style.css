@@ -1,5 +1,5 @@
 .logo-img {
-    width: 10%;
+    width: 15vh;
     margin-right: 10px;
   }
   
@@ -9,7 +9,3 @@
     font-size: 17px;
   }
 
-  .logo p{
-    margin-top: 50px;
-    color: black;
-  }
