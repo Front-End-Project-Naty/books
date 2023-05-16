@@ -7,10 +7,6 @@ const AppContainer = styled.div`
     height: 100vh;
     background-image: url(${img});
     background-size: cover;
-  
-  li {
-    list-style: none;
-  }
 `
 
 function App() {
