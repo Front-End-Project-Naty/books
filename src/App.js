@@ -1,11 +1,23 @@
-import './App.css';
-import Header from './componentes/Header';
+import Header from './componentes/Header'
+import styled from 'styled-components' 
+import img from './imagens/wallpaper.jpg' 
+
+const AppContainer = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background-image: url(${img});
+    background-size: cover;
+  
+  li {
+    list-style: none;
+  }
+`
 
 function App() {
   return (
-    <div className='App'>
+    <AppContainer>
       <Header />
-    </div>
+    </AppContainer>
   );
 }
 
