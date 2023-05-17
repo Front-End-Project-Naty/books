@@ -10,6 +10,7 @@ const Opcao = styled.li`
     height: 100%;
     padding: 0 5px;
     cursor: pointer;
+    color: #1b4748ff;
 
     &:hover {
     font-weight: bold;
