@@ -13,28 +13,30 @@ const PesquisaContainer = styled.section`
 
 const Titulo = styled.h2`
     color: rgba(255, 255, 255);
-    font-size: 26px;
+    font-size: 28px;
     text-align: center;
     width: 100%;
 
     span {
         display: inline-block;
-        background-color: rgba(27, 71, 72, 0.8); 
         border-radius: 5px;
         padding: 4px;
+        -webkit-text-stroke: 1px black;
+        text-stroke: 1px black;
       }
 `
 
 const Subtitulo = styled.h3`
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 40px;
     color: rgba(255, 255, 255);
 
     span {
         display: inline-block;
-        background-color: rgba(27, 71, 72, 0.8); 
         border-radius: 5px;
         padding: 4px;
+        -webkit-text-stroke: 1px black;
+        text-stroke: 1px black;
       }
 `
 
@@ -48,7 +50,6 @@ const Resultado = styled.div`
 
       p{
         width: 120px;
-        background: rgba(27, 71, 72, 0.8);
         padding: 5px;
         border-radius: 20px;
         color: rgb(255, 255, 255)
@@ -56,14 +57,13 @@ const Resultado = styled.div`
 
       img {
         width: 100px;
-        background: rgba(27, 71, 72, 0.8);
         padding: 8px;
         border-radius: 5px;
       }
 
       &:hover img {
         font-weight: bold;
-        transform: scale(1.1);
+        transform: scale(1.3);
       }
 `
 
