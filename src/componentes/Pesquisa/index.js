@@ -7,13 +7,13 @@ const PesquisaContainer = styled.section`
     color: black;
     text-align: center;
     padding: 85px 0;
-    height: 270px;
+    height: 180px;
     width: 100%;
 `
 
 const Titulo = styled.h2`
     color: rgba(255, 255, 255);
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
     width: 100%;
 
