@@ -6,14 +6,13 @@ const Input = styled.input`
     padding: 10px 140px;
     border-radius: 50px;
     width: 200px;
-    color: #1b4748ff;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
 
     &::placeholder {
-        color: #FFF;
-        font-size: 16px;
+        color: #1b4748ff;
+        font-size: 14px;
     }
 
 `
