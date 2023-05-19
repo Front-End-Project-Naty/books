@@ -23,16 +23,15 @@ const Titulo = styled.h2`
 `
 
 const Subtitulo = styled.h3`
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
     color: black;
 
     span {
         display: inline-block;
         border-radius: 5px;
         padding: 4px;
-        -webkit-text-stroke: 1px black;
-        text-stroke: 1px black;
+        background-color: rgba(244, 238, 216, 0.5);
       }
 `
 

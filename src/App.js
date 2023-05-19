@@ -10,7 +10,7 @@ const AppContainer = styled.div`
   background-image: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 80% 20%;
 `
 
 function App() {
