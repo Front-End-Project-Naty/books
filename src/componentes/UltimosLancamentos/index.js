@@ -9,8 +9,7 @@ const UltimosLancamentosContainer = styled.section`
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
-    background-color: #ffd4b9;
+    background-color: #c3e4f5;
 `
 
 const NovosLivrosContainer = styled.div`
@@ -24,8 +23,13 @@ const NovosLivrosContainer = styled.div`
         width: 100px;
         padding: 8px;
         border-radius: 10px;
+        transform: scale(1);
+        opacity: 1;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
       }
-
+      &:hover img {
+        transform: scale(1.1);
+      }
 `
 
 function UltimosLancamentos () {

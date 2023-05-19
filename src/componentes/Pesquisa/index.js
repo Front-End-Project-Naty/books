@@ -6,14 +6,12 @@ import { livros } from "./dadosPesquisa";
 const PesquisaContainer = styled.section`
     color: black;
     text-align: center;
-    padding: 85px 0;
-    height: 180px;
     width: 100%;
 `
 
 const Titulo = styled.h2`
-    color: black;
-    font-size: 26px;
+    color: #EA047E;
+    font-size: 29px;
     text-align: center;
     width: 100%;
 
@@ -21,15 +19,13 @@ const Titulo = styled.h2`
         display: inline-block;
         border-radius: 5px;
         padding: 4px;
-        -webkit-text-stroke: 1px black;
-        text-stroke: 1px black;
       }
 `
 
 const Subtitulo = styled.h3`
     font-size: 18px;
     margin-bottom: 40px;
-    color: rgba(255, 255, 255);
+    color: black;
 
     span {
         display: inline-block;
@@ -42,28 +38,23 @@ const Subtitulo = styled.h3`
 
 const Resultado = styled.div`
       display: flex;
-      flex-direction: column;
+      flex-wrap:wrap;
       justify-content: center;
       align-items: center;
       cursor: pointer;
       font-weight: bold;
-
-      p{
-        width: 120px;
-        padding: 5px;
-        border-radius: 20px;
-        color: rgb(255, 255, 255)
-      }
+      width: 100%;
 
       img {
-        width: 100px;
+        width: 110px;
         padding: 8px;
-        border-radius: 5px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+        margin-bottom: 13px;
       }
 
       &:hover img {
-        font-weight: bold;
-        transform: scale(1.3);
+        transform: scale(1.1);
       }
 `
 
@@ -73,7 +64,7 @@ function Pesquisa () {
     return (
         <PesquisaContainer>
             <Titulo>
-                <span>Já sabe por onde começar?</span>
+                <span>Bem-vindo à Livraria Great Books</span>
             </Titulo>
             <Subtitulo>
                 <span>Encontre seu livro em nossa estante.</span>
@@ -84,6 +75,7 @@ function Pesquisa () {
                     const textoDigitado = evento.target.value.toLowerCase();
                     if (textoDigitado.trim() === '') {
                         setLivrosPesquisados([]);
+                        
                     }else{
                         const resultadoPesquisa = livros.filter( livro => livro.nome.toLowerCase().includes(textoDigitado)
                         );
@@ -93,7 +85,6 @@ function Pesquisa () {
             />
             { livrosPesquisados.map( livro=> (
                 <Resultado>
-                    <p> {livro.nome}</p>
                     <img src={livro.src} alt="livro"/>
                 </Resultado>
             )) }
