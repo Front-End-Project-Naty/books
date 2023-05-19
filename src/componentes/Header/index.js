@@ -4,7 +4,7 @@ import OpcoesHeader from "../OpcoesHeader";
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-    background: rgba(255,255,255,1);
+    background-color: #ffd4b9;
     display: flex;
     justify-content: center;
 `

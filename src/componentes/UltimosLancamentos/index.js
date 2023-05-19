@@ -1,4 +1,7 @@
+import CardRecomenda from "../CardRecomenda"
+import { Titulo } from "../Titulo"
 import { livros } from "./dadosUltimosLancamentos"
+import imagemLivro from "../../imagens/livro5.png"
 import styled from "styled-components"
 
 const UltimosLancamentosContainer = styled.section`
@@ -6,14 +9,8 @@ const UltimosLancamentosContainer = styled.section`
     text-align: center;
     display: flex;
     flex-direction: column;
-`
-
-const Titulo = styled.h2`
-    color: rgba(255, 255, 255);
-    font-size: 26px;
-    text-align: center;
-    -webkit-text-stroke: 1px black;
-    text-stroke: 1px black;
+    margin-top: 250px;
+    background-color: #ffd4b9;
 `
 
 const NovosLivrosContainer = styled.div`
@@ -26,7 +23,7 @@ const NovosLivrosContainer = styled.div`
     img {
         width: 100px;
         padding: 8px;
-        border-radius: 5px;
+        border-radius: 10px;
       }
 
 `
@@ -34,12 +31,22 @@ const NovosLivrosContainer = styled.div`
 function UltimosLancamentos () {
     return (
         <UltimosLancamentosContainer>
-            <Titulo>Últimos Lançamentos</Titulo>
+            <Titulo 
+                cor="#000" 
+                tamanhoFonte="26px"
+                >Últimos Lançamentos
+            </Titulo>
             <NovosLivrosContainer>
                 {livros.map( livro =>
-                    <img src={livro.src} />
+                    <img src={livro.src} alt="livro"/>
                 )}
             </NovosLivrosContainer>
+            <CardRecomenda
+                titulo="Talvez você se interesse por"
+                subtitulo="Minha vida com Boris"   
+                descricao="Uma história comovente" 
+                img={imagemLivro}
+            />
     </UltimosLancamentosContainer>
     )
 }

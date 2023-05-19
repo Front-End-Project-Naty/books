@@ -9,7 +9,8 @@ const LogoContainer = styled.div`
 
 const LogoImage = styled.img`
   width: 15vh;
-  margin-right: 10px;
+  margin: 8px 10px 8px 0;
+  border-radius: 30px;
 `
 
 function Logo() {

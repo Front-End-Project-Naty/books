@@ -12,7 +12,7 @@ const PesquisaContainer = styled.section`
 `
 
 const Titulo = styled.h2`
-    color: rgba(255, 255, 255);
+    color: black;
     font-size: 26px;
     text-align: center;
     width: 100%;
@@ -89,7 +89,7 @@ function Pesquisa () {
             { livrosPesquisados.map( livro=> (
                 <Resultado>
                     <p> {livro.nome}</p>
-                    <img src={livro.src} />
+                    <img src={livro.src} alt="livro"/>
                 </Resultado>
             )) }
         </PesquisaContainer>
