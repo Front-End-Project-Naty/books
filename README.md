@@ -1,3 +1,31 @@
+<p align="center">
+<img width=80% src="https://github.com/natyaith/books/assets/61480327/33b5e6d1-1b4c-4e00-a541-631b51b62c2c">
+<p>
+
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
+
+## Descrição do projeto 
+
+<p align="justify">  
+Projeto de uma biblioteca desenvolvido para praticar o React.js.
+</p>
+
+## Ferramentas utilizadas
+:heavy_check_mark:REACT.JS
+###
+
+## Acesso ao projeto
+
+Você pode acessar em: https://books-rosy-delta.vercel.app/
+
+
+## Desenvolvedora
+
+Feito com ❤️ por Natalia Aith 👋🏽 [Entre em contato!](https://www.linkedin.com/in/natalia-aith)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
