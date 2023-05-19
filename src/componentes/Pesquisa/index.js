@@ -81,9 +81,14 @@ function Pesquisa () {
             <Input
                 placeholder="Escreva sua próxima leitura"
                 onBlur={evento => {
-                    const textoDigitado = evento.target.value
-                    const resultadoPesquisa = livros.filter( livro => livro.nome.includes(textoDigitado))
-                    setLivrosPesquisados(resultadoPesquisa)
+                    const textoDigitado = evento.target.value.toLowerCase();
+                    if (textoDigitado.trim() === '') {
+                        setLivrosPesquisados([]);
+                    }else{
+                        const resultadoPesquisa = livros.filter( livro => livro.nome.toLowerCase().includes(textoDigitado)
+                        );
+                        setLivrosPesquisados(resultadoPesquisa)
+                    }
                 }}        
             />
             { livrosPesquisados.map( livro=> (
