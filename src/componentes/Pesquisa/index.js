@@ -2,11 +2,16 @@ import Input from "../Input";
 import styled from "styled-components";
 import { useState } from "react";
 import { livros } from "./dadosPesquisa";
+import img from '../../imagens/wallpaper.jpg' 
 
 const PesquisaContainer = styled.section`
     color: black;
     text-align: center;
     width: 100%;
+    background-image: url(${img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
 `
 
 const Titulo = styled.h2`
@@ -14,6 +19,7 @@ const Titulo = styled.h2`
     font-size: 29px;
     text-align: center;
     width: 100%;
+    margin: 0;
 
     span {
         display: inline-block;
@@ -24,7 +30,7 @@ const Titulo = styled.h2`
 
 const Subtitulo = styled.h3`
     font-size: 20px;
-    margin-bottom: 20px;
+    margin: 40px 0;
     color: black;
 
     span {

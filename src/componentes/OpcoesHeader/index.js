@@ -20,6 +20,7 @@ const Opcao = styled.li`
 
 const Opcoes = styled.ul`
     display: flex;
+    
 `
 
 const textoOpcoes = ['CATEGORIAS', 'FAVORITOS', 'ESTANTE'] 
