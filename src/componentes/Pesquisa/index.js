@@ -4,6 +4,7 @@ import { useState } from "react";
 import img from '../../imagens/wallpaper.jpg' 
 import { useEffect } from "react";
 import { getLivros } from "../../servicos/livros";
+import { postFavorito } from "../../servicos/favoritos";
 
 const PesquisaContainer = styled.section`
     color: black;
@@ -77,6 +78,11 @@ function Pesquisa () {
         setLivros(livrosDaAPI)
     }
 
+    async function insertFavorito(id) {
+        await postFavorito(id)
+        alert(`Livro de id${id} inserido!`)
+    }
+
     return (
         <PesquisaContainer>
             <Titulo>
@@ -100,7 +106,7 @@ function Pesquisa () {
                 }}        
             />
             { livrosPesquisados.map( livro=> (
-                <Resultado>
+                <Resultado onClick={() => insertFavorito(livro.id)}>
                     <img src={livro.image} alt="livro"/>
                     <p>{livro.nome}</p>
                 </Resultado>
