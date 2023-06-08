@@ -2,13 +2,12 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { deleteFavorito, getFavoritos } from '../servicos/favoritos';
-import livroImg from '../imagens/livro3.png'
 
 const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
   background-color: #c3e4f5;
-`
+  `
 const ResultadoContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +30,9 @@ const Resultado = styled.div`
         width: 100px;
     }
     &:hover {
-        border: 1px solid white;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 20px;
     }
 `
 
@@ -63,20 +64,20 @@ function Favoritos() {
 
   return (
     <AppContainer>
-     <div>
-       <Titulo>Aqui estão seus livros favoritos:</Titulo>
-       <ResultadoContainer>
-         {
-           favoritos.length !== 0 ? favoritos.map(favorito => (
-             <Resultado onClick={() => deletarFavorito(favorito.id)}>
-               <p>{favorito.nome}</p>
-               <img src={livroImg} alt="livro favorito"/>
-             </Resultado>
-           )) : null
-         }
-       </ResultadoContainer>
-     </div>
-   </AppContainer>
+      <div>
+        <Titulo>Aqui estão seus livros favoritos:</Titulo>
+        <ResultadoContainer>
+          {favoritos.length !== 0 ? (
+            favoritos.map((favorito) => (
+              <Resultado onClick={() => deletarFavorito(favorito.id)}>
+                <p>{favorito.nome}</p>
+                <img src={favorito.image} alt="livro favorito" />
+              </Resultado>
+            ))
+          ) : null}
+        </ResultadoContainer>
+      </div>
+    </AppContainer>
   );
 }
 
