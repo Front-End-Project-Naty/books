@@ -3,14 +3,13 @@
 <p>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM+ANDAMENTO&color=GREEN&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
 ## Descrição do projeto 
 
 <p align="justify">  
-Projeto de uma biblioteca desenvolvido para praticar o React.js.
-No momento, desenvolvendo a parte de integração entre uma API criado com Node.js por mim e esse projeto.
+Projeto de uma biblioteca desenvolvido com o React.js integrando uma API criada por mim com Node.js.
 </p>
 
 ## Ferramentas utilizadas
